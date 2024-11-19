@@ -1,154 +1,155 @@
 package com.example.quizapp
 
+import android.graphics.Color
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.os.CountDownTimer
 import android.util.Log
 import android.view.View
+import android.widget.Button
 import android.widget.Toast
+import androidx.appcompat.app.AlertDialog
 import com.example.quizapp.databinding.ActivityQuizBinding
-import com.example.quizapp.model.Question
-import com.google.android.material.bottomsheet.BottomSheetDialogFragment
-import com.google.firebase.auth.ktx.auth
-import com.google.firebase.database.DataSnapshot
-import com.google.firebase.database.DatabaseError
-import com.google.firebase.database.ValueEventListener
-import com.google.firebase.database.ktx.database
-import com.google.firebase.firestore.Query
-import com.google.firebase.firestore.ktx.firestore
-import com.google.firebase.ktx.Firebase
+import com.example.quizapp.databinding.ScoreDialogBinding
 
-class QuizActivity : AppCompatActivity() {
+class QuizActivity : AppCompatActivity(),View.OnClickListener {
 
-    private val binding by lazy { ActivityQuizBinding.inflate(layoutInflater) }
+    companion object {
+        var questionModelList : List<QuestionModel> = listOf()
+        var time : String = ""
+    }
 
-    var currentChance = 0L
-    var currentQuestion = 0
-    var score = 0
+    lateinit var binding: ActivityQuizBinding
 
-    private lateinit var questionList: ArrayList<Question>
+    var currentQuestionIndex = 0;
+    var selectedAnswer = ""
+    var score = 0;
 
     override fun onCreate(savedInstanceState: Bundle?) {
-
         super.onCreate(savedInstanceState)
+        binding = ActivityQuizBinding.inflate(layoutInflater)
         setContentView(binding.root)
+        binding.apply {
+            btn0.setOnClickListener(this@QuizActivity)
+            btn1.setOnClickListener(this@QuizActivity)
+            btn2.setOnClickListener(this@QuizActivity)
+            btn3.setOnClickListener(this@QuizActivity)
+            nextBtn.setOnClickListener(this@QuizActivity)
+        }
 
-        Firebase.database.reference.child("PlayChance")
-            .child(Firebase.auth.currentUser!!.uid)
-            .addValueEventListener(object : ValueEventListener {
-                override fun onDataChange(snapshot: DataSnapshot) {
-                    val value = snapshot.value
-                    if (value != null) {
-                        currentChance = value as? Long ?: 0
-                    }
-                }
+        loadQuestions()
+        startTimer()
+    }
 
-                override fun onCancelled(error: DatabaseError) {
-                    Log.d("TAG", "onCancelled: ${error.message}")
-                }
+    private fun startTimer(){
+        val totalTimeInMillis = time.toInt() * 60 * 1000L
+        object : CountDownTimer(totalTimeInMillis,1000L){
+            override fun onTick(millisUntilFinished: Long) {
+                val seconds = millisUntilFinished /1000
+                val minutes = seconds/60
+                val remainingSeconds = seconds % 60
+                binding.timerIndicatorTextview.text = String.format("%02d:%02d", minutes,remainingSeconds)
 
-            })
-
-        Firebase.database.reference.child("PlayerCoin")
-            .child(Firebase.auth.currentUser!!.uid)
-            .addValueEventListener(object : ValueEventListener {
-                override fun onDataChange(snapshot: DataSnapshot) {
-                    val value = snapshot.value
-                    if (value != null) {
-                        binding.coinWithdrawal.text = snapshot.value.toString()
-                    }
-                }
-
-                override fun onCancelled(error: DatabaseError) {
-                    TODO()
-                }
-
-            })
-
-        questionList = ArrayList()
-
-        var image = intent.getIntExtra("categoryimg", 0)
-        var catText = intent.getStringExtra("questionType")
-
-        Firebase.firestore.collection("Questions")
-            .document(catText.toString())
-            .collection("question1")
-            .get()
-            .addOnSuccessListener { questionData ->
-
-                questionList.clear()
-
-                for (data in questionData.documents) {
-                    var question: Question? = data.toObject(Question::class.java)
-                    questionList.add(question!!)
-                }
-
-                if (questionList.size > 0) {
-                    binding.question.text = questionList[currentQuestion].question
-                    binding.option1.text = questionList[currentQuestion].option1
-                    binding.option2.text = questionList[currentQuestion].option2
-                    binding.option3.text = questionList[currentQuestion].option3
-                    binding.option4.text = questionList[currentQuestion].option4
-                }
             }
 
-        binding.categoryimg.setImageResource(image)
+            override fun onFinish() {
+                //Finish the quiz
+            }
 
-        binding.coinWithdrawal.setOnClickListener {
-            var bottomSheetDialog: BottomSheetDialogFragment = Withdrawal()
-            bottomSheetDialog.show(this@QuizActivity.supportFragmentManager, "TEST")
-            bottomSheetDialog.enterTransition
-        }
-        binding.CoinWithdrawal1.setOnClickListener {
-            var bottomSheetDialog: BottomSheetDialogFragment = Withdrawal()
-            bottomSheetDialog.show(this@QuizActivity.supportFragmentManager, "TEST")
-            bottomSheetDialog.enterTransition
+        }.start()
+    }
+
+    private fun loadQuestions(){
+        selectedAnswer = ""
+        if(currentQuestionIndex == questionModelList.size){
+            finishQuiz()
+            return
         }
 
-        binding.option1.setOnClickListener {
-            nextQuestionAndScoreUpdate(binding.option1.text.toString())
-        }
-        binding.option2.setOnClickListener {
-            nextQuestionAndScoreUpdate(binding.option2.text.toString())
-        }
-        binding.option3.setOnClickListener {
-            nextQuestionAndScoreUpdate(binding.option3.text.toString())
-        }
-        binding.option4.setOnClickListener {
-            nextQuestionAndScoreUpdate(binding.option4.text.toString())
+        binding.apply {
+            questionIndicatorTextview.text = "Question ${currentQuestionIndex+1}/ ${questionModelList.size} "
+            questionProgressIndicator.progress =
+                ( currentQuestionIndex.toFloat() / questionModelList.size.toFloat() * 100 ).toInt()
+            questionTextview.text = questionModelList[currentQuestionIndex].question
+            btn0.text = questionModelList[currentQuestionIndex].options[0]
+            btn1.text = questionModelList[currentQuestionIndex].options[1]
+            btn2.text = questionModelList[currentQuestionIndex].options[2]
+            btn3.text = questionModelList[currentQuestionIndex].options[3]
         }
     }
 
-    private fun nextQuestionAndScoreUpdate(str: String) {
+    override fun onClick(view: View?) {
 
-        if (str.equals(questionList[currentQuestion].ans)) {
-            score += 10
-            Toast.makeText(this, score.toString(), Toast.LENGTH_SHORT).show()
+        binding.apply {
+            btn0.setBackgroundColor(getColor(R.color.gray))
+            btn1.setBackgroundColor(getColor(R.color.gray))
+            btn2.setBackgroundColor(getColor(R.color.gray))
+            btn3.setBackgroundColor(getColor(R.color.gray))
         }
 
-        currentQuestion++
-
-        var passScore = (questionList.size * 10) / 2
-
-        if (currentQuestion >= questionList.size) {
-            if (score >= passScore) {
-
-                binding.winner.visibility = View.VISIBLE
-                Firebase.database.reference.child("PlayChance")
-                    .child(Firebase.auth.currentUser!!.uid).setValue(currentChance + 1)
-
-            } else {
-                binding.sorry.visibility = View.VISIBLE
+        val clickedBtn = view as Button
+        if(clickedBtn.id==R.id.next_btn){
+            //next button is clicked
+            if(selectedAnswer.isEmpty()){
+                Toast.makeText(applicationContext,"Please select answer to continue",Toast.LENGTH_SHORT).show()
+                return;
             }
-
-            Toast.makeText(this, "You have reached the end of the quiz", Toast.LENGTH_SHORT).show()
-
-        } else {
-            binding.question.text = questionList[currentQuestion].question
-            binding.option1.text = questionList[currentQuestion].option1
-            binding.option2.text = questionList[currentQuestion].option2
-            binding.option3.text = questionList[currentQuestion].option3
-            binding.option4.text = questionList[currentQuestion].option4
+            if(selectedAnswer == questionModelList[currentQuestionIndex].correct){
+                score++
+                Log.i("Score of quiz",score.toString())
+            }
+            currentQuestionIndex++
+            loadQuestions()
+        }else{
+            //options button is clicked
+            selectedAnswer = clickedBtn.text.toString()
+            clickedBtn.setBackgroundColor(getColor(R.color.orange))
         }
     }
 
+    private fun finishQuiz(){
+        val totalQuestions = questionModelList.size
+        val percentage = ((score.toFloat() / totalQuestions.toFloat() ) *100 ).toInt()
+
+        val dialogBinding  = ScoreDialogBinding.inflate(layoutInflater)
+        dialogBinding.apply {
+            scoreProgressIndicator.progress = percentage
+            scoreProgressText.text = "$percentage %"
+            if(percentage>60){
+                scoreTitle.text = "Congrats! You have passed"
+                scoreTitle.setTextColor(Color.BLUE)
+            }else{
+                scoreTitle.text = "Oops! You have failed"
+                scoreTitle.setTextColor(Color.RED)
+            }
+            scoreSubtitle.text = "$score out of $totalQuestions are correct"
+            finishBtn.setOnClickListener {
+                finish()
+            }
+        }
+
+        AlertDialog.Builder(this)
+            .setView(dialogBinding.root)
+            .setCancelable(false)
+            .show()
+
+    }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
