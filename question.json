@@ -1,0 +1,971 @@
+[
+  {
+    "id": "1",
+    "questionList": [
+      {
+        "correct": "2008",
+        "options": ["2006", "2008", "2010", "2012"],
+        "question": "In which year was Android officially launched?"
+      },
+      {
+        "correct": "Google",
+        "options": ["Apple", "Google", "Samsung", "Microsoft"],
+        "question": "Who owns Android?"
+      },
+      {
+        "correct": "Linux",
+        "options": ["Windows", "Linux", "MacOS", "Unix"],
+        "question": "Which operating system kernel does Android use?"
+      },
+      {
+        "correct": "Cupcake",
+        "options": ["Donut", "Cupcake", "Eclair", "Froyo"],
+        "question": "What was the name of Android 1.5?"
+      },
+      {
+        "correct": "Play Store",
+        "options": ["App Store", "Google Market", "Play Store", "Galaxy Store"],
+        "question": "What is the name of the official app store for Android devices?"
+      },
+      {
+        "correct": "Java",
+        "options": ["Python", "Java", "C++", "Ruby"],
+        "question": "What is the primary programming language used for developing Android apps?"
+      },
+      {
+        "correct": "Samsung",
+        "options": ["HTC", "Samsung", "Nokia", "LG"],
+        "question": "Which company launched the first Android smartphone, the Samsung Galaxy?"
+      },
+      {
+        "correct": "Material Design",
+        "options": [
+          "Flat Design",
+          "Material Design",
+          "Metro Design",
+          "Skeuomorphic Design"
+        ],
+        "question": "What is the name of Google's design language for Android introduced in 2014?"
+      },
+      {
+        "correct": "Android Studio",
+        "options": ["Xcode", "Android Studio", "Visual Studio", "Eclipse"],
+        "question": "What is the official IDE for Android development?"
+      },
+      {
+        "correct": "Google Assistant",
+        "options": ["Siri", "Cortana", "Google Assistant", "Alexa"],
+        "question": "What is the name of the virtual assistant used on Android devices?"
+      }
+    ],
+    "subtitle": "History and Features",
+    "time": "15",
+    "title": "Android Knowledge Quiz"
+  },
+  {
+    "id": "2",
+    "questionList": [
+      {
+        "correct": "Language",
+        "options": ["Computer", "Language", "Program", "Software"],
+        "question": "Java is a?"
+      },
+      {
+        "correct": "Modulus",
+        "options": ["Modulus", "Multiply", "Subtract", "Add"],
+        "question": "What does the % symbol represent?"
+      },
+      {
+        "correct": "HyperText Markup Language",
+        "options": [
+          "HyperText Main Language",
+          "HyperTransfer Markup Language",
+          "HyperText Markup Language",
+          "HighText Markup Language"
+        ],
+        "question": "What does HTML stand for?"
+      },
+      {
+        "correct": "False",
+        "options": ["True", "False"],
+        "question": "Is Python a statically typed language?"
+      },
+      {
+        "correct": "print()",
+        "options": ["console()", "print()", "log()", "echo()"],
+        "question": "Which function is used to display output in Python?"
+      },
+      {
+        "correct": "let",
+        "options": ["var", "let", "define", "const"],
+        "question": "Which keyword is used in JavaScript to declare a block-scoped variable?"
+      },
+      {
+        "correct": "False",
+        "options": ["True", "False"],
+        "question": "Is 0 considered a truthy value in Python?"
+      },
+      {
+        "correct": "Index out of range",
+        "options": [
+          "Syntax error",
+          "Runtime error",
+          "Index out of range",
+          "Segmentation fault"
+        ],
+        "question": "What error occurs when accessing an index that does not exist in an array?"
+      },
+      {
+        "correct": "IDE",
+        "options": ["Operating System", "IDE", "Compiler", "Interpreter"],
+        "question": "What is a software application that provides tools to write, test, and debug code?"
+      },
+      {
+        "correct": "Object-Oriented",
+        "options": [
+          "Functional",
+          "Object-Oriented",
+          "Procedural",
+          "Declarative"
+        ],
+        "question": "What type of programming paradigm is Java primarily?"
+      }
+    ],
+    "subtitle": "Basic Programming Concepts",
+    "time": "20",
+    "title": "Programming"
+  },
+  {
+    "id": "3",
+    "questionList": [
+      {
+        "correct": "Hyper Text Markup Language",
+        "options": [
+          "Hyper Transfer Markup Language",
+          "Hyper Text Makeup Language",
+          "Hyper Text Markup Language",
+          "High Transfer Markup Language"
+        ],
+        "question": "What does HTML stand for?"
+      },
+      {
+        "correct": "JavaScript",
+        "options": ["Java", "Python", "JavaScript", "C++"],
+        "question": "Which programming language is used for client-side scripting in web development?"
+      },
+      {
+        "correct": "Cascading Style Sheet",
+        "options": [
+          "Cascading Style Sheet",
+          "Computer Style Sheet",
+          "Colorful Style Sheet",
+          "Creative Style Sheet"
+        ],
+        "question": "What does CSS stand for?"
+      },
+      {
+        "correct": "Contains metadata about the document",
+        "options": [
+          "Defines the main content of the document",
+          "Contains metadata about the document",
+          "Specifies a header for a document",
+          "Defines a section that is quoted from another source"
+        ],
+        "question": "What is the purpose of the <head> tag in HTML?"
+      },
+      {
+        "correct": "<body>",
+        "options": ["<body>", "<main>", "<html>", "<content>"],
+        "question": "Which HTML tag is used to define the main content of a web page?"
+      },
+      {
+        "correct": "<script>",
+        "options": ["<script>", "<code>", "<javascript>", "<js>"],
+        "question": "Which HTML tag is used to embed JavaScript code in a web page?"
+      },
+      {
+        "correct": "alt",
+        "options": ["alt", "src", "title", "text"],
+        "question": "Which HTML attribute provides alternative text for an image?"
+      },
+      {
+        "correct": "Bootstrap",
+        "options": [
+          "Bootstrap",
+          "Foundation",
+          "Tailwind CSS",
+          "All of the above"
+        ],
+        "question": "Which of the following is a popular CSS framework?"
+      },
+      {
+        "correct": "id",
+        "options": ["class", "id", "name", "style"],
+        "question": "Which HTML attribute is used to uniquely identify an element?"
+      },
+      {
+        "correct": "<a>",
+        "options": ["<a>", "<link>", "<anchor>", "<ref>"],
+        "question": "Which HTML tag is used to create hyperlinks?"
+      }
+    ],
+    "subtitle": "Introduction to Web Technologies",
+    "time": "12",
+    "title": "Web Development"
+  },
+  {
+    "id": "4",
+    "questionList": [
+      {
+        "correct": "HyperText Markup Language",
+        "options": [
+          "HyperText Markup Language",
+          "Hyper Transfer Markup Language",
+          "Hyper Text Makeup Language",
+          "High Transfer Markup Language"
+        ],
+        "question": "What does HTML stand for?"
+      },
+      {
+        "correct": "HTML tags",
+        "options": [
+          "HTML attributes",
+          "HTML tags",
+          "HTML elements",
+          "HTML scripts"
+        ],
+        "question": "What are the basic building blocks of an HTML document?"
+      },
+      {
+        "correct": "<head>",
+        "options": ["<body>", "<head>", "<html>", "<footer>"],
+        "question": "Which HTML tag is used to define the metadata of a web page?"
+      },
+      {
+        "correct": "<a>",
+        "options": ["<a>", "<link>", "<img>", "<div>"],
+        "question": "Which HTML tag is used to create hyperlinks?"
+      },
+      {
+        "correct": "<div>",
+        "options": ["<div>", "<section>", "<article>", "<header>"],
+        "question": "Which HTML tag is used to define a generic container for content?"
+      },
+      {
+        "correct": "CSS",
+        "options": ["HTML", "CSS", "JavaScript", "PHP"],
+        "question": "Which technology is used to style the content of an HTML page?"
+      },
+      {
+        "correct": "<img>",
+        "options": ["<image>", "<pic>", "<img>", "<image src>"],
+        "question": "Which HTML tag is used to embed images?"
+      },
+      {
+        "correct": "DOCTYPE",
+        "options": ["DOCTYPE", "<html>", "<meta>", "<header>"],
+        "question": "Which declaration is used to specify the HTML version of a document?"
+      },
+      {
+        "correct": "Semantic HTML",
+        "options": [
+          "Semantic HTML",
+          "Structured HTML",
+          "Tagged HTML",
+          "Formatted HTML"
+        ],
+        "question": "What term is used to describe HTML that uses meaningful tags such as <header>, <article>, <section>?"
+      },
+      {
+        "correct": "The <title> tag",
+        "options": [
+          "The <meta> tag",
+          "The <body> tag",
+          "The <head> tag",
+          "The <title> tag"
+        ],
+        "question": "Which HTML tag defines the title of the document that appears in the browser's title bar?"
+      }
+    ],
+    "subtitle": "HTML Basics",
+    "time": "15",
+    "title": "Web Development"
+  },
+  {
+    "id": "5",
+    "questionList": [
+      {
+        "correct": "Paris",
+        "options": ["Berlin", "Madrid", "Paris", "Rome"],
+        "question": "What is the capital of France?"
+      },
+      {
+        "correct": "Tokyo",
+        "options": ["Seoul", "Beijing", "Tokyo", "Bangkok"],
+        "question": "Which city is the capital of Japan?"
+      },
+      {
+        "correct": "Australia",
+        "options": ["Australia", "Canada", "New Zealand", "South Africa"],
+        "question": "Canberra is the capital of which country?"
+      },
+      {
+        "correct": "Brasília",
+        "options": ["Buenos Aires", "Rio de Janeiro", "Brasília", "São Paulo"],
+        "question": "What is the capital of Brazil?"
+      },
+      {
+        "correct": "Rome",
+        "options": ["Athens", "Rome", "Vienna", "Barcelona"],
+        "question": "Which European city is known as the 'Eternal City'?"
+      },
+      {
+        "correct": "Ottawa",
+        "options": ["Toronto", "Ottawa", "Vancouver", "Montreal"],
+        "question": "What is the capital city of Canada?"
+      },
+      {
+        "correct": "Cairo",
+        "options": ["Cairo", "Nairobi", "Lagos", "Cape Town"],
+        "question": "Which city is the capital of Egypt?"
+      },
+      {
+        "correct": "Moscow",
+        "options": ["Saint Petersburg", "Minsk", "Moscow", "Kiev"],
+        "question": "What is the capital of Russia?"
+      },
+      {
+        "correct": "New Delhi",
+        "options": ["Mumbai", "New Delhi", "Bangalore", "Kolkata"],
+        "question": "What is the capital city of India?"
+      },
+      {
+        "correct": "Washington, D.C.",
+        "options": ["New York", "Los Angeles", "Washington, D.C.", "Chicago"],
+        "question": "What is the capital of the United States?"
+      }
+    ],
+    "subtitle": "World Capitals",
+    "time": "10",
+    "title": "Geography"
+  },
+  {
+    "id": "6",
+    "questionList": [
+      {
+        "correct": "Mercury",
+        "options": ["Mercury", "Venus", "Mars", "Earth"],
+        "question": "Which planet is closest to the Sun?"
+      },
+      {
+        "correct": "Jupiter",
+        "options": ["Saturn", "Jupiter", "Neptune", "Uranus"],
+        "question": "Which is the largest planet in our solar system?"
+      },
+      {
+        "correct": "8",
+        "options": ["7", "8", "9", "10"],
+        "question": "How many planets are there in the solar system?"
+      },
+      {
+        "correct": "Milky Way",
+        "options": ["Andromeda", "Milky Way", "Sombrero", "Whirlpool"],
+        "question": "What is the name of the galaxy we live in?"
+      },
+      {
+        "correct": "Neil Armstrong",
+        "options": [
+          "Buzz Aldrin",
+          "Neil Armstrong",
+          "Yuri Gagarin",
+          "Michael Collins"
+        ],
+        "question": "Who was the first person to walk on the moon?"
+      },
+      {
+        "correct": "Venus",
+        "options": ["Venus", "Mars", "Jupiter", "Saturn"],
+        "question": "Which planet is known as the 'Evening Star'?"
+      },
+      {
+        "correct": "Saturn",
+        "options": ["Jupiter", "Saturn", "Uranus", "Neptune"],
+        "question": "Which planet is famous for its rings?"
+      },
+      {
+        "correct": "Mars",
+        "options": ["Venus", "Mars", "Earth", "Mercury"],
+        "question": "Which planet is known as the 'Red Planet'?"
+      },
+      {
+        "correct": "Sun",
+        "options": ["Sun", "Sirius", "Alpha Centauri", "Polaris"],
+        "question": "What is the name of the star at the center of our solar system?"
+      },
+      {
+        "correct": "Earth",
+        "options": ["Earth", "Venus", "Mars", "Jupiter"],
+        "question": "Which planet is known as the 'Blue Planet'?"
+      }
+    ],
+    "subtitle": "Solar System",
+    "time": "15",
+    "title": "Astronomy"
+  },
+  {
+    "id": "7",
+    "questionList": [
+      {
+        "correct": "Albert Einstein",
+        "options": [
+          "Isaac Newton",
+          "Nikola Tesla",
+          "Albert Einstein",
+          "Galileo Galilei"
+        ],
+        "question": "Who developed the theory of relativity?"
+      },
+      {
+        "correct": "Marie Curie",
+        "options": [
+          "Rosalind Franklin",
+          "Marie Curie",
+          "Ada Lovelace",
+          "Dorothy Hodgkin"
+        ],
+        "question": "Who was the first woman to win a Nobel Prize?"
+      },
+      {
+        "correct": "Gravity",
+        "options": ["Magnetism", "Gravity", "Electricity", "Friction"],
+        "question": "What force causes objects to fall towards the Earth?"
+      },
+      {
+        "correct": "Leonardo da Vinci",
+        "options": [
+          "Michelangelo",
+          "Leonardo da Vinci",
+          "Pablo Picasso",
+          "Vincent van Gogh"
+        ],
+        "question": "Who painted the 'Mona Lisa'?"
+      },
+      {
+        "correct": "Alexander Graham Bell",
+        "options": [
+          "Thomas Edison",
+          "Nikola Tesla",
+          "Alexander Graham Bell",
+          "Michael Faraday"
+        ],
+        "question": "Who invented the telephone?"
+      },
+      {
+        "correct": "Newton's Laws of Motion",
+        "options": [
+          "Law of Universal Gravitation",
+          "Laws of Thermodynamics",
+          "Newton's Laws of Motion",
+          "Kepler's Laws"
+        ],
+        "question": "Which theory explains the relationship between force, mass, and acceleration?"
+      },
+      {
+        "correct": "Charles Darwin",
+        "options": [
+          "Galileo Galilei",
+          "Charles Darwin",
+          "Albert Einstein",
+          "Isaac Newton"
+        ],
+        "question": "Who is known for developing the theory of evolution by natural selection?"
+      },
+      {
+        "correct": "The Periodic Table",
+        "options": [
+          "The Periodic Table",
+          "The Atomic Model",
+          "The Chemical Bonding Diagram",
+          "The Molecular Structure"
+        ],
+        "question": "What organizes all known chemical elements based on their properties?"
+      },
+      {
+        "correct": "The Earth",
+        "options": ["The Moon", "The Sun", "The Earth", "Mars"],
+        "question": "Which planet is known as the 'Goldilocks Zone' because it supports life?"
+      },
+      {
+        "correct": "DNA",
+        "options": ["RNA", "Protein", "DNA", "Amino Acids"],
+        "question": "What molecule carries genetic information in living organisms?"
+      }
+    ],
+    "subtitle": "Famous Scientists & Discoveries",
+    "time": "15",
+    "title": "Science"
+  },
+  {
+    "id": "8",
+    "questionList": [
+      {
+        "correct": "William Shakespeare",
+        "options": [
+          "Charles Dickens",
+          "Jane Austen",
+          "William Shakespeare",
+          "Mark Twain"
+        ],
+        "question": "Who wrote the play 'Romeo and Juliet'?"
+      },
+      {
+        "correct": "The Great Gatsby",
+        "options": [
+          "To Kill a Mockingbird",
+          "The Great Gatsby",
+          "1984",
+          "Pride and Prejudice"
+        ],
+        "question": "Which novel is set during the Roaring Twenties and features Jay Gatsby?"
+      },
+      {
+        "correct": "George Orwell",
+        "options": [
+          "Aldous Huxley",
+          "George Orwell",
+          "J.R.R. Tolkien",
+          "Ernest Hemingway"
+        ],
+        "question": "Who wrote the novel '1984'?"
+      },
+      {
+        "correct": "Homer",
+        "options": ["Virgil", "Homer", "Sophocles", "Plato"],
+        "question": "Which ancient Greek poet wrote 'The Iliad' and 'The Odyssey'?"
+      },
+      {
+        "correct": "J.K. Rowling",
+        "options": [
+          "J.R.R. Tolkien",
+          "J.K. Rowling",
+          "C.S. Lewis",
+          "Suzanne Collins"
+        ],
+        "question": "Who is the author of the 'Harry Potter' series?"
+      },
+      {
+        "correct": "The Catcher in the Rye",
+        "options": [
+          "The Great Gatsby",
+          "Moby Dick",
+          "The Catcher in the Rye",
+          "Catch-22"
+        ],
+        "question": "Which novel features the character Holden Caulfield?"
+      },
+      {
+        "correct": "Mark Twain",
+        "options": [
+          "Ernest Hemingway",
+          "Mark Twain",
+          "John Steinbeck",
+          "F. Scott Fitzgerald"
+        ],
+        "question": "Who wrote 'The Adventures of Tom Sawyer'?"
+      },
+      {
+        "correct": "Pride and Prejudice",
+        "options": [
+          "Wuthering Heights",
+          "Sense and Sensibility",
+          "Pride and Prejudice",
+          "Emma"
+        ],
+        "question": "Which novel by Jane Austen features Elizabeth Bennet and Mr. Darcy?"
+      },
+      {
+        "correct": "F. Scott Fitzgerald",
+        "options": [
+          "Hemingway",
+          "F. Scott Fitzgerald",
+          "John Steinbeck",
+          "Ray Bradbury"
+        ],
+        "question": "Who wrote 'The Great Gatsby'?"
+      },
+      {
+        "correct": "The Hobbit",
+        "options": [
+          "The Fellowship of the Ring",
+          "The Hobbit",
+          "The Two Towers",
+          "The Return of the King"
+        ],
+        "question": "Which J.R.R. Tolkien novel features the character Bilbo Baggins?"
+      }
+    ],
+    "subtitle": "Classic Literature",
+    "time": "15",
+    "title": "Literature"
+  },
+  {
+    "id": "9",
+    "questionList": [
+      {
+        "correct": "Venus",
+        "options": ["Earth", "Mars", "Venus", "Saturn"],
+        "question": "Which planet is known as the 'Morning Star'?"
+      },
+      {
+        "correct": "Jupiter",
+        "options": ["Earth", "Mars", "Jupiter", "Neptune"],
+        "question": "Which planet is the largest in our solar system?"
+      },
+      {
+        "correct": "The Moon",
+        "options": ["The Sun", "The Moon", "Mars", "Venus"],
+        "question": "Which celestial body orbits the Earth?"
+      },
+      {
+        "correct": "Saturn",
+        "options": ["Saturn", "Uranus", "Neptune", "Jupiter"],
+        "question": "Which planet has the most prominent ring system?"
+      },
+      {
+        "correct": "The Sun",
+        "options": ["The Moon", "The Earth", "The Sun", "Saturn"],
+        "question": "Which celestial body is at the center of our solar system?"
+      },
+      {
+        "correct": "Neptune",
+        "options": ["Pluto", "Uranus", "Neptune", "Mars"],
+        "question": "Which planet is known as the 'Ice Giant'?"
+      },
+      {
+        "correct": "Pluto",
+        "options": ["Mars", "Pluto", "Venus", "Saturn"],
+        "question": "Which planet was reclassified as a dwarf planet in 2006?"
+      },
+      {
+        "correct": "Earth",
+        "options": ["Venus", "Mars", "Earth", "Jupiter"],
+        "question": "Which planet is known as the 'Blue Planet'?"
+      },
+      {
+        "correct": "Mercury",
+        "options": ["Venus", "Mercury", "Mars", "Earth"],
+        "question": "Which is the closest planet to the Sun?"
+      },
+      {
+        "correct": "Uranus",
+        "options": ["Saturn", "Uranus", "Jupiter", "Neptune"],
+        "question": "Which planet rotates on its side compared to other planets?"
+      }
+    ],
+    "subtitle": "Planets in the Solar System",
+    "time": "12",
+    "title": "Astronomy"
+  },
+  {
+    "id": "10",
+    "questionList": [
+      {
+        "correct": "The Nile",
+        "options": ["The Amazon", "The Nile", "The Yangtze", "The Mississippi"],
+        "question": "Which is the longest river in the world?"
+      },
+      {
+        "correct": "Mount Everest",
+        "options": ["K2", "Mount Kilimanjaro", "Mount Everest", "Mount Fuji"],
+        "question": "Which is the tallest mountain in the world?"
+      },
+      {
+        "correct": "The Great Barrier Reef",
+        "options": [
+          "The Galápagos Islands",
+          "The Great Barrier Reef",
+          "The Red Sea Coral Reef",
+          "The Coral Triangle"
+        ],
+        "question": "Which natural wonder is located off the coast of Australia?"
+      },
+      {
+        "correct": "The Sahara Desert",
+        "options": [
+          "The Sahara Desert",
+          "The Gobi Desert",
+          "The Kalahari Desert",
+          "The Arabian Desert"
+        ],
+        "question": "Which is the largest hot desert in the world?"
+      },
+      {
+        "correct": "Lake Baikal",
+        "options": [
+          "Lake Victoria",
+          "Lake Superior",
+          "Lake Baikal",
+          "The Dead Sea"
+        ],
+        "question": "Which is the deepest freshwater lake in the world?"
+      },
+      {
+        "correct": "The Grand Canyon",
+        "options": [
+          "The Grand Canyon",
+          "The Yosemite Valley",
+          "The Blue Mountains",
+          "The Great Rift Valley"
+        ],
+        "question": "Which is the largest canyon in the world?"
+      },
+      {
+        "correct": "The Amazon Rainforest",
+        "options": [
+          "The Congo Rainforest",
+          "The Amazon Rainforest",
+          "The Borneo Rainforest",
+          "The Daintree Rainforest"
+        ],
+        "question": "Which rainforest is the largest in the world?"
+      },
+      {
+        "correct": "Antarctica",
+        "options": ["Arctic", "Antarctica", "Greenland", "Siberia"],
+        "question": "Which is the coldest continent on Earth?"
+      },
+      {
+        "correct": "The Pacific Ocean",
+        "options": [
+          "The Atlantic Ocean",
+          "The Indian Ocean",
+          "The Pacific Ocean",
+          "The Arctic Ocean"
+        ],
+        "question": "Which is the largest ocean on Earth?"
+      },
+      {
+        "correct": "Mount Kilimanjaro",
+        "options": [
+          "Mount Fuji",
+          "Mount Kilimanjaro",
+          "Mount St. Helens",
+          "Mount Vesuvius"
+        ],
+        "question": "Which is the highest mountain in Africa?"
+      }
+    ],
+    "subtitle": "Natural Wonders",
+    "time": "15",
+    "title": "Geography"
+  },
+  {
+    "id": "11",
+    "questionList": [
+      {
+        "correct": "Cascading Style Sheets",
+        "options": [
+          "Cascading Style Sheets",
+          "Computer Style Sheets",
+          "Colorful Style Sheets",
+          "Creative Style Sheets"
+        ],
+        "question": "What does CSS stand for?"
+      },
+      {
+        "correct": "color",
+        "options": ["background-color", "color", "text-color", "font-color"],
+        "question": "Which CSS property is used to change the text color of an element?"
+      },
+      {
+        "correct": "inline",
+        "options": ["block", "inline", "inline-block", "none"],
+        "question": "Which CSS display property value will make an element flow alongside other elements without breaking the layout?"
+      },
+      {
+        "correct": "width",
+        "options": ["height", "width", "margin", "padding"],
+        "question": "Which CSS property is used to set the width of an element?"
+      },
+      {
+        "correct": "margin",
+        "options": ["padding", "border", "margin", "text-align"],
+        "question": "Which CSS property is used to create space outside of an element's border?"
+      },
+      {
+        "correct": "box-shadow",
+        "options": [
+          "box-shadow",
+          "text-shadow",
+          "shadow-box",
+          "background-shadow"
+        ],
+        "question": "Which CSS property is used to add shadow effects around an element's box?"
+      },
+      {
+        "correct": "float",
+        "options": ["clear", "float", "position", "overflow"],
+        "question": "Which CSS property is used to push elements to the left or right within a container?"
+      },
+      {
+        "correct": "font-family",
+        "options": ["font-size", "font-family", "text-font", "font-weight"],
+        "question": "Which CSS property is used to specify the font of an element?"
+      },
+      {
+        "correct": "class",
+        "options": ["id", "class", "style", "href"],
+        "question": "Which attribute is used in HTML to assign a class to an element for applying CSS styles?"
+      },
+      {
+        "correct": "position",
+        "options": ["margin", "position", "float", "z-index"],
+        "question": "Which CSS property is used to specify the positioning method of an element?"
+      }
+    ],
+    "subtitle": "CSS Basics",
+    "time": "15",
+    "title": "Web Development"
+  },
+  {
+    "id": "12",
+    "questionList": [
+      {
+        "correct": "console.log()",
+        "options": ["alert()", "console.log()", "document.write()", "prompt()"],
+        "question": "Which JavaScript method is used to display a message in the console?"
+      },
+      {
+        "correct": "let",
+        "options": ["var", "let", "const", "function"],
+        "question": "Which JavaScript keyword is used to declare a variable that can be reassigned?"
+      },
+      {
+        "correct": "function",
+        "options": ["function", "var", "class", "method"],
+        "question": "Which keyword is used to declare a function in JavaScript?"
+      },
+      {
+        "correct": "=== (strict equality)",
+        "options": [
+          "== (loose equality)",
+          "=== (strict equality)",
+          "!=",
+          "!=="
+        ],
+        "question": "Which JavaScript operator checks both the value and the type of two variables?"
+      },
+      {
+        "correct": "addEventListener()",
+        "options": [
+          "onClick()",
+          "addEventListener()",
+          "attachEvent()",
+          "setTimeout()"
+        ],
+        "question": "Which method is used to attach an event handler to an HTML element?"
+      },
+      {
+        "correct": "array.push()",
+        "options": [
+          "array.push()",
+          "array.pop()",
+          "array.shift()",
+          "array.concat()"
+        ],
+        "question": "Which method is used to add a new element to the end of an array in JavaScript?"
+      },
+      {
+        "correct": "null",
+        "options": ["undefined", "null", "NaN", "false"],
+        "question": "What is the value of a variable that has been declared but not assigned a value?"
+      },
+      {
+        "correct": "return",
+        "options": ["return", "yield", "continue", "break"],
+        "question": "Which keyword is used to return a value from a function?"
+      },
+      {
+        "correct": "JSON.parse()",
+        "options": [
+          "JSON.parse()",
+          "JSON.stringify()",
+          "JSON.object()",
+          "JSON.toString()"
+        ],
+        "question": "Which method is used to convert a JSON string into a JavaScript object?"
+      },
+      {
+        "correct": "undefined",
+        "options": ["null", "undefined", "false", "NaN"],
+        "question": "What is the data type of a variable that has not been assigned a value?"
+      }
+    ],
+    "subtitle": "JavaScript Basics",
+    "time": "15",
+    "title": "JavaScript"
+  },
+  {
+    "id": "13",
+    "questionList": [
+      {
+        "correct": "string",
+        "options": ["string", "number", "boolean", "any"],
+        "question": "What is the default type of a string in TypeScript?"
+      },
+      {
+        "correct": "any",
+        "options": ["any", "string", "object", "void"],
+        "question": "Which TypeScript type allows a variable to hold any type of value?"
+      },
+      {
+        "correct": "interface",
+        "options": ["class", "interface", "type", "function"],
+        "question": "Which TypeScript feature is used to define the structure of an object?"
+      },
+      {
+        "correct": "void",
+        "options": ["void", "null", "undefined", "any"],
+        "question": "What type is used to represent a function that does not return a value in TypeScript?"
+      },
+      {
+        "correct": "readonly",
+        "options": ["readonly", "const", "let", "var"],
+        "question": "Which modifier in TypeScript makes a property immutable?"
+      },
+      {
+        "correct": "tuple",
+        "options": ["array", "tuple", "set", "object"],
+        "question": "What is the name of the TypeScript type that allows for an array with fixed types and length?"
+      },
+      {
+        "correct": "enum",
+        "options": ["enum", "object", "type", "class"],
+        "question": "Which TypeScript construct is used to define a set of named constants?"
+      },
+      {
+        "correct": "never",
+        "options": ["void", "null", "never", "any"],
+        "question": "Which type is used in TypeScript for functions that never return (e.g., throw an error)?"
+      },
+      {
+        "correct": "type assertion",
+        "options": [
+          "type assertion",
+          "type casting",
+          "type narrowing",
+          "type coercion"
+        ],
+        "question": "Which mechanism allows you to tell TypeScript to treat a variable as a specific type?"
+      },
+      {
+        "correct": "const assertion",
+        "options": ["as const", "const assertion", "const keyword", "readonly"],
+        "question": "Which TypeScript feature is used to narrow the type of a value to the literal type of the value?"
+      }
+    ],
+    "subtitle": "TypeScript Basics",
+    "time": "15",
+    "title": "TypeScript"
+  }
+]
