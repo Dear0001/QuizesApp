@@ -1,5 +1,6 @@
 package com.example.quizapp
 
+import android.annotation.SuppressLint
 import android.graphics.Color
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
@@ -51,6 +52,7 @@ class QuizActivity : AppCompatActivity(), View.OnClickListener {
     private fun startTimer() {
         val totalTimeInMillis = time.toInt() * 60 * 1000L
         object : CountDownTimer(totalTimeInMillis, 1000L) {
+            @SuppressLint("DefaultLocale")
             override fun onTick(millisUntilFinished: Long) {
                 val seconds = millisUntilFinished / 1000
                 val minutes = seconds / 60
@@ -64,6 +66,7 @@ class QuizActivity : AppCompatActivity(), View.OnClickListener {
         }.start()
     }
 
+    @SuppressLint("SetTextI18n")
     private fun loadQuestions() {
         selectedAnswer = ""
         if (currentQuestionIndex == quizQuestions.size) {
@@ -112,8 +115,9 @@ class QuizActivity : AppCompatActivity(), View.OnClickListener {
         }
     }
 
+    @SuppressLint("SetTextI18n")
     private fun finishQuiz() {
-        val totalQuestions = quizQuestions.size // Always 5 since we're selecting 5 random questions
+        val totalQuestions = quizQuestions.size
         val percentage = ((score.toFloat() / totalQuestions.toFloat()) * 100).toInt() // Calculate percentage
         val result = if (score >= 3) "Win" else "Loss" // Win if score >= 3
 
@@ -122,7 +126,7 @@ class QuizActivity : AppCompatActivity(), View.OnClickListener {
         dialogBinding.apply {
             scoreProgressIndicator.progress = percentage // Update progress bar with percentage
             scoreProgressText.text = "$percentage%" // Display percentage text
-            scoreTitle.text = if (score >= 3) "Congrats! You Win!" else "Sorry! You Lose!" // Dynamic result message
+            scoreTitle.text = if (score >= 3) "Congrats! You Win!" else "Sorry! You Lose!"
             scoreTitle.setTextColor(if (score >= 3) Color.BLUE else Color.RED) // Color based on result
             scoreSubtitle.text = "$score out of $totalQuestions are correct" // Display score
             finishBtn.setOnClickListener {
