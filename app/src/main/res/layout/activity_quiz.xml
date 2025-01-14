@@ -27,7 +27,8 @@
             app:tint="@color/blue"
             android:layout_marginEnd="4dp"
             android:layout_toStartOf="@id/timer_indicator_textview"
-            android:layout_centerVertical="true"/>
+            android:layout_centerVertical="true"
+            tools:ignore="ContentDescription" />
 
         <TextView
             android:layout_width="wrap_content"
@@ -128,7 +129,8 @@
                 android:layout_gravity="end"
                 android:textSize="20sp"
                 android:paddingHorizontal="40dp"
-                android:id="@+id/next_btn" />
+                android:id="@+id/next_btn"
+                tools:ignore="HardcodedText" />
 
 
 
