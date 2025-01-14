@@ -48,7 +48,7 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="All items"
+        android:text="All Questions"
         android:layout_marginTop="16dp"
         android:layout_marginStart="4dp"
         android:textSize="20sp"
@@ -57,18 +57,19 @@
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recycler_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp" />
+
         <ProgressBar
             android:layout_width="20dp"
             android:layout_height="20dp"
             android:layout_centerInParent="true"
             android:visibility="gone"
             android:id="@+id/progress_bar"/>
-
-        <androidx.recyclerview.widget.RecyclerView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="16dp"
-            android:id="@+id/recycler_view"/>
 
     </RelativeLayout>
 
